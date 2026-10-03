@@ -1,0 +1,14 @@
+herdr-pi-subagents-status
+
+This package includes a modified version of Herdr's Pi reporter:
+  Project: Herdr (herdrdev/herdr)
+  Source: src/integration/assets/pi/herdr-agent-state.ts
+  URL: https://github.com/herdrdev/herdr
+  License: Apache License 2.0, included in LICENSE
+
+Based on Herdr's Pi integration version 8.
+Modifications include ordinary pi-subagents status aggregation, lifecycle
+listener cleanup, timestamp-backed report sequences, a duplicate-reporter
+warning, standalone Pi packaging, and regression tests.
+
+This is an independent Pi extension, not Herdr's managed integration.

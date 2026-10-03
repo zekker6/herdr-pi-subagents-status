@@ -1,0 +1,29 @@
+{
+  "name": "herdr-pi-subagents-status",
+  "version": "0.1.0",
+  "description": "Herdr status reporting for Pi sessions and ordinary pi-subagents workers",
+  "type": "module",
+  "packageManager": "bun@1.4.2",
+  "license": "Apache-2.0",
+  "keywords": ["pi-package", "pi", "herdr", "subagents"],
+  "files": ["src", "LICENSE", "NOTICE", "README.md"],
+  "pi": {
+    "extensions": ["./src/herdr-status.ts"]
+  },
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.99.2",
+    "@types/node": "26.6.4",
+    "typescript": "6.0.3"
+  },
+  "scripts": {
+    "lint": "bun --bun tsc --noEmit",
+    "test": "bun test test/",
+    "test:install": "bun test test/install.test.mjs"
+  }
+}
