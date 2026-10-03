@@ -112,12 +112,6 @@ The first two suites use local fixtures and mocked lifecycle/socket behavior. Th
 
 If you installed this checkout with `pi install .`, start Pi normally instead of adding another source load. Source edits take effect after `/reload` or a restart.
 
-## CI and dependency updates
-
-GitHub Actions runs `task install` and `task check` on pull requests and pushes to `main` or `master`, using the tools pinned in `mise.toml`.
-
-`renovate.json` extends the public [zekker6/renovate-config](https://github.com/zekker6/renovate-config) presets for dependency, mise tool, and GitHub Actions updates, including their automerge policy. Enable the [Renovate GitHub App](https://github.com/apps/renovate) for this repository to activate updates.
-
 ## Attribution
 
 Adapted from Herdr's Pi integration version 8, with subagent status aggregation and regression tests. See [NOTICE](NOTICE) for provenance and [LICENSE](LICENSE) for Apache-2.0 terms.
