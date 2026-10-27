@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Herdr status reporting for Pi sessions and ordinary pi-subagents workers",
   "type": "module",
-  "packageManager": "bun@1.4.3",
+  "packageManager": "bun@1.4.4",
   "license": "Apache-2.0",
   "keywords": ["pi-package", "pi", "herdr", "subagents"],
   "files": ["src", "LICENSE", "NOTICE", "README.md"],
